@@ -1,325 +1,157 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Landing Page</title>
-    <style>
-        /* Estilos CSS para os elementos */
-        .container {
-            border: 2px solid black;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
+{% extends 'bases/base.html' %}
 
-        .title {
-            font-weight: bold;
-            text-align: center;
-        }
+{% block 'body' %}
+    <div class="container">
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <a style="text-decoration: none; color:white;" href="#">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <span  class="fonte-destaque">RS 1.000,00</span>
+                            </div>
+                            <div class="col-md">
+                                <img class="icone-setas" src="#">
+                            </div>
+                        </div>
+        
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="text-decoration: none; color:white;" href="#">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <span  class="fonte-destaque">RS 1.000,00</span>
+                            </div>
+                            <div class="col-md">
+                                <img class="icone-setas" src="#">
+                            </div>
+                        </div> 
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br>
+        <br>
+       
+        <div class="row">
 
-        .text-center {
-            text-align: center;
-        }
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="saldo">
+                        <span class="fonte-destaque">Saldo total</span>
+                        <br>
+                        <span class="font-light">R$ 1.200,00</span>
+                    </div>
+                    <hr class="hr-borda">
+                    <span class="fonte-destaque">Suas contas</span>
 
-        .text-left {
-            text-align: left;
-        }
-
-        .text-right {
-            text-align: right;
-        }
-
-        .form-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .form-container label {
-            margin-right: 10px;
-        }
-
-        .form-container input[type="text"],
-        .form-container input[type="email"],
-        .form-container button {
-            margin-bottom: 10px;
-        }
-
-        .navbar {
-            border: 4px solid black;
-            padding: 10px;
-        }
-
-        .navbar-text {
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .list-inline {
-            display: flex;
-            list-style: none;
-            padding: 0;
-        }
-
-        .list-inline li {
-            margin-right: 10px;
-        }
-
-        .card {
-            border: 2px solid black;
-            padding: 10px;
-            margin-bottom: 20px;
-            width: 200px;
-            text-align: center;
-        }
-
-        .card img {
-            width: 100%;
-            height: auto;
-        }
-
-        .footer {
-            display: flex;
-            align-items: center;
-        }
-
-        .footer ul {
-            list-style: none;
-            padding: 0;
-            text-align: left;
-            margin-right: 20px;
-        }
-
-        .footer li {
-            margin-bottom: 10px;
-        }
-
-        .social-icons {
-            display: flex;
-            align-items: center;
-        }
-
-        .social-icons img {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="navbar">
-        <div class="navbar-text">Logo da Athomic Dev</div>
-        <div class="form-container">
-            <form>
-                <div>
-                    Mostre que me visitou e ainda fique por dentro das novidades do projeto:
+                    <div class="div-contas">
+                        
+                            <div class="lista-conta">
+                                <span>Nubank</span>
+                                <span class="total-conta">R$ 3.000,00</span>
+                            </div>
+                            <br>
+                        
+                        
+                        
+                    </div>
+                    <hr class="hr-borda">
+                    <a href="#" class="botao-principal">Gerenciar contas</a>
                 </div>
-                <label for="name">Nome:</label>
-                <input type="text" id="name">
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email">
-                <br>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2 class="title">O que é Athomic Dev?</h2>
-        <div>
-            <p>
-                Athomic Dev é um projeto inovador criado com o propósito de capacitar e auxiliar microempreendedores a embarcar no mundo digital. 
-                Nosso objetivo é fornecer as ferramentas e conhecimentos necessários para que eles possam aproveitar as tecnologias modernas 
-                e aplicá-las em seus estabelecimentos, impulsionando sua produtividade e agilizando seus processos.
-            </p>
-            <p>
-                Acreditamos que a tecnologia não deve ser um obstáculo, mas sim uma oportunidade para transformar negócios e vidas. É por isso que 
-                desenvolvemos projetos como o "Facilitando a Vida" e o "Grafiqueme", que têm como foco principal ajudar as pessoas em seu cotidiano. 
-            </p>
-            <p>
-                O "Facilitando a Vida" é uma solução prática que visa simplificar o dia a dia das pessoas, oferecendo recursos e funcionalidades que otimizam tarefas comuns. 
-                Seja organizando sua lista de afazeres, ajudando a gerenciar suas finanças pessoais ou fornecendo dicas úteis, nosso objetivo é tornar a vida mais fácil e eficiente.
-            </p>
-            <p>
-                Já o "Grafiqueme" é uma ferramenta poderosa para auxiliar estudantes, profissionais e qualquer pessoa que lide com análise e visualização de dados. Com recursos avançados de criação de gráficos e visualizações, 
-                o Grafiqueme permite que as pessoas transmitam informações complexas de forma clara e impactante, facilitando a compreensão e a tomada de decisões embasadas.
-            </p>
-            <p>
-                Em Athomic Dev, não apenas fornecemos as soluções tecnológicas, mas também nos dedicamos a criar uma experiência envolvente e acessível para nossos usuários. Queremos que todos, independentemente de seu nível 
-                de conhecimento técnico, possam se beneficiar das vantagens do mundo digital. 
-            </p>
-            <p>
-                Se você está em busca de transformação, de levar seu negócio para o próximo nível ou de simplificar sua vida, Athomic Dev é o seu parceiro ideal. Junte-se a nós nessa jornada tecnológica e 
-                descubra um novo mundo de possibilidades."
-            </p>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2 class="text-left">Como surgiu?</h2>
-        <div>
-            <p>
-                Nossa história começa com Allan Thomas, o visionário por trás do projeto. Ele percebeu que, em meio a tantos avanços tecnológicos rápidos, algumas pessoas estavam sendo deixadas para trás, 
-                sem acesso às oportunidades do mundo digital. Foi nesse momento que nasceu a ideia de criar um projeto que servisse como ponte entre o passado e o futuro.
-
-            </p>
-            <p>
-                Movido por empatia e determinação, Allan viu a necessidade de capacitar microempreendedores e pessoas comuns a se adaptarem ao mundo digital, permitindo que eles aproveitem os benefícios da 
-                tecnologia de forma significativa. Ele compreendeu que o acesso ao conhecimento e às ferramentas certas poderia transformar negócios e mudar vidas. 
-            </p>
-            <p>
-                Athomic Dev nasceu para preencher essa lacuna e fazer a diferença. Nosso objetivo é proporcionar um ambiente acolhedor e acessível, onde todos possam aprender, crescer e prosperar. 
-                Queremos oferecer uma nova perspectiva, abrindo portas para um futuro repleto de oportunidades.
-            </p>
-            <p>
                 
-            </p>
-        </div>
-    </div>
+            </div>
 
-    <div class="container">
-        <div class="atuacao-title">
-            <h2>Área de Atuação</h2>
-        </div>
-        <div class="list-inline">
-            <ul>
-                <li>Web</li>
-                <li>Mobile</li>
-                <li>IA</li>
-                <li>Data Analysis</li>
-                <li>Algoritimos</li>
-            </ul>
-            <ul>
-                <li>Automação</li>
-                <li>Visibilidade Social</li>
-                <li>Desenvolvimento Pessoal</li>
-                <li>Aprimoramento de Skills</li>
-                <li>Gestão Financeira</li>
-            </ul>
-        </div>
-    </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="saldo">
+                                <span class="fonte-destaque">Saldo mensal</span>
+                                <br>
+                                <span class="font-light">R$ 0.000,00</span>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="despesa">
+                                <span class="fonte-destaque">Despesa mensal</span>
+                                <br>
+                                <span class="font-light">R$ 0.000,00</span>
+                            </div>
 
-    <div class="container">
-        <div class="carousel">
-            <div class="card">
-                <h3>Facilitando a vida</h3>
-                <img src="imagem1.jpg" alt="Imagem 1">
-            </div>
-            <div class="card">
-                <h3>Flor de liz</h3>
-                <img src="imagem2.jpg" alt="Imagem 2">
-            </div>
-            <div class="card">
-                <h3>GrafiqueMe </h3>
-                <img src="imagem3.jpg" alt="Imagem 3">
-            </div>
-            <div class="card">
-                <h3>AthomicFlix </h3>
-                <img src="imagem4.jpg" alt="Imagem 4">
-            </div>
-        </div>
-    </div>
+                        </div>
 
-    <div class="container">
-        <div class="servicos-title">
-            <h2>Serviços</h2>
-        </div>
-        <table>
-            <tr>
-                <td>Desenvolvimento Web</td>
-                <td>Desenvolvimento Mobile</td>
-                <td>Automação de Tarefas</td>
-                <td>E-commerce</td>
-            </tr>
-            <tr>
-                <td>Logo e Design</td>
-                <td>Gestão de Tráfego</td>
-                <td>Análise e tratativa de Dados</td>
-                <td>Social Mídia</td>
-            </tr>
-        </table>
-    </div>
+                    </div>
+                    <hr class="hr-borda">
+                    <span class="fonte-destaque">Total livre</span>
+                    <span class="font-light negativo">R$ 0.000,00</span>
+                    <hr class="hr-borda">
+                    <a href="#" class="botao-principal">Gerenciar dados mensais</a>
+                </div>
+            </div>
 
-    <div class="container">
-        <h2 class="text-center">Galeria</h2>
-        <div class="card-container">
-            <div class="card">
-                <img src="imagem1.jpg" alt="Imagem 1">
-                <div>Landing Page</div>
-            </div>
-            <div class="card">
-                <img src="imagem2.jpg" alt="Imagem 2">
-                <div>E-Commerce</div>
-            </div>
-            <div class="card">
-                <img src="imagem3.jpg" alt="Imagem 3">
-                <div>Automação de tarefas</div>
-            </div>
-            <div class="card">
-                <img src="imagem4.jpg" alt="Imagem 4">
-                <div>Power Bi</div>
-            </div>
-            <div class="card">
-                <img src="imagem5.jpg" alt="Imagem 5">
-                <div>Análises de dados</div>
-            </div>
-            <div class="card">
-                <img src="imagem6.jpg" alt="Imagem 6">
-                <div>Jogos</div>
-            </div>
-            <div class="card">
-                <img src="imagem7.jpg" alt="Imagem 7">
-                <div>Gráficos</div>
-            </div>
-            <div class="card">
-                <img src="imagem8.jpg" alt="Imagem 8">
-                <div>Streaming</div>
-            </div>
         </div>
-    </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="saldo">
+                        <span class="fonte-destaque">Planejamento</span>
+                    </div>
+                    <hr class="hr-borda">
+                    <a href="#" class="botao-principal">Definir planejamento</a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <span class="fonte-destaque">Equilibrio financeiro</span>
+                    <hr class="hr-borda">
 
-    <div class="container">
-        <div class="content">
-            <div>
-                <img src="imagem.jpg" alt="Imagem">
-            </div>
-            <div>
-                Allan Thomas idealizador do projeto Athomic Dev, Como desenvolvedor com 
-                anos de experiência, tenho dedicado minha paixão ao mundo do desenvolvimento. 
-                Sou especializado em Python e suas diversas ferramentas e frameworks.
-            </div>
-        </div>
-    </div>
+                    <p>Gastos essenciais</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <br>
+                    <p>Gastos não essenciais</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
 
-    <div class="container">
-        <div class="content">
-            <div>
-                Ryan Freitas, um apaixonado por design e um dos membros talentosos 
-                da equipe do Athomic Dev. Meu objetivo é criar experiências visuais 
-                incríveis e impactantes para nossos clientes..
-            </div>
-            <div>
-                <img src="imagem.jpg" alt="Imagem">
-            </div>
-        </div>
-    </div>
+                    <hr class="hr-borda">
+                    <a href="#" class="botao-principal">Alterar categorias essenciais</a>
 
-    <footer>
-        <div class="footer">
-            <div class="footer-contatos">
-                <ul>
-                    <li>allan.thomas.a.o@gmail.com</li>
-                    <li>+55 (81) 9 9700-4225</li>
-                    <li>Rua Do Rosário, 170, Centro, Goiana - PE</li>
-                    <li>Item 4</li>
-                    <li>Item 5</li>
-                </ul>
-            </div>
-            <div class="social-icons">
-                <img src="whatsapp-icon.png" alt="WhatsApp">
-                <img src="github-icon.png" alt="GitHub">
-                <img src="instagram-icon.png" alt="Instagram">
-                <img src="linkedin-icon.png" alt="LinkedIn">
+                </div>
             </div>
         </div>
-    </footer>
-</body>
-</html>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            
+            <div class="col-md-8">
+                <div class="card">
+                    <span class="fonte-destaque">Gerenciar contas</span>
+                    <hr class="hr-borda">
+
+                    <span class="fonte-destaque">Próximas do vencimento</span>
+                    <span class="fonte-light">3 contas próximas do vencimento</span>
+                    <br>
+                    <span class="fonte-destaque negativo">Vencidas</span>
+                    <span class="fonte-light">0 contas vencidas</span>
+
+                    <hr class="hr-borda">
+                    
+                    <a href="#" class="botao-principal">Ver mais</a>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+{% endblock %}
